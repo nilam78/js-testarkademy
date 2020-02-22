@@ -1,0 +1,62 @@
+<html>
+	<body>
+		<p>Name:<input type="text" id="name" name="name"></input>
+		<p>Age:<input type="number" id="age" name="age"></input>
+		<p>Address:<input type="text" id="address" name="address"></input>
+		<p>Hobbies:<input type="text" name="hobby[]" id="Hobby1" value="Hobby1"></input></p>
+		<p style="padding-left:57px"><input type="text" name="Hobby[]" id="hobby2" value="Hobby2"></input></p>
+		<p style="padding-left:57px"><input type="text" name="Hobby[]" id="hobby3" value="Hobby3"></input></p>
+		<p>Married:<select id="married">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option></select>
+		<p>Education:<select id="education">
+			<option value="SMA/SMK">SMA/SMK</option>
+			<option value="D3">D3</option>
+			<option value="S1">S1</option></select></p>
+		<p>Name of University: <input type="text" id="name of university" name="name"></input>
+		<p>Major: <input type="text" id="major" name="name"></input>
+		<p>Year-In: <input type="date" id="year-in" name="Year-In"></input>
+		<p>Year-Out: <input type="date" id="year-out" name="year-out"></input>
+		<p>Skills: <input type="text" id="skills1" name="skills[]" value="Skills1"></input>
+		<p>Level: <select id="level1">
+			<option value="Beginner">Beginner</option>
+			<option value="Advanced">Advanced</option>
+			<option value="Expert">Expert</option></select></p>
+		<p>Skills: <input type="text" id="skills2" name="skills[]" value="Skills2"></input>
+		<p>Level: <select id="level2">
+			<option value="Beginner">Beginner</option>
+			<option value="Advanced">Advanced</option>
+			<option value="Expert">Expert</option></select></p>
+		<p>Interest in Cooding: <select id="interest in cooding">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option></select></p>
+			
+		<p><button onclick="myFunction()"></button>
+	</body>
+	<script type="text/javascript">
+	
+	function myFunction(){
+	
+		var name = document.getElementById("name").value;
+		var age = document.getElementById("age").value;
+		var address = document.getElementById("address").value;
+		var hobbies1 = document.getElementById("Hobby1").value;
+		var hobbies2 = document.getElementById("hobby2").value;
+		var hobbies3 = document.getElementById("hobby3").value;
+		var married = document.getElementById("married").value;
+		var education = document.getElementById("education");
+		var university = document.getElementById("name of university").value;
+		var major = document.getElementById("major").value;
+		var yearin = document.getElementById("year-in").value;
+		var yearout = document.getElementById("year-out").value;
+		var skills1 = document.getElementById("skills1").value;
+		var level1 = document.getElementById("level1").value;
+		var skills2 = document.getElementById("skills2").value;
+		var level2 = document.getElementById("level2").value;
+		var interest = document.getElementById("interest in cooding").value;
+		
+		console.log(name+';'+age+';'+address+';'+hobbies1+';'+hobbies2+';'+hobbies3+';'+married+';'+education+';'+university+';'+major+';'+yearin+';'+yearout+';'+skills1+';'+level1+';'+skills2+';'+level2+';'+interest);
+	}
+	</script>
+
+</html>
